@@ -2,7 +2,9 @@
 mlx/*.o
 mlx/*.a
 mlx/test/*
-objs/
+obj/
 cub3D
 Cub3D
 *.bmp
+test
+libasm.a
