@@ -6,7 +6,7 @@
 #    By: mescande <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/02 14:03:19 by mescande          #+#    #+#              #
-#    Updated: 2021/03/01 14:28:12 by user42           ###   ########.fr        #
+#    Updated: 2021/03/01 15:16:12 by user42           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,11 +67,8 @@ clean:
 	@rm -rf $(OBJ_DIR)
 
 aclean: clean
-	@rm -rf $(EXEC)
+	@rm -rf test
 	@rm -rf $(NAME)
-
-tclean: clean
-	@rm -rf $(EXEC)
 
 fclean: clean
 	@rm -rf $(NAME)

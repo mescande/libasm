@@ -3,11 +3,11 @@ global	ft_read
 extern	__errno_location
 
 ft_read:
-	mov		rbx, rdi			;fd
-	mov		rcx, rsi			;str
+	mov		rbx, rdi		;fd
+	mov		rcx, rsi		;str
 
-	mov		eax, 3				;invoke SYS_READ (opcode 3)
-	int		80h
+	mov		eax, 0			;invoke SYS_READ (opcode 0)
+	syscall
 	cmp		rax, 0
 	jge		end				;if no errors, end function
 	mov		r8, rax			;save error value
